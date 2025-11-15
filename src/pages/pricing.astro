@@ -7,14 +7,14 @@ import PricingCard from '../components/PricingCard.astro';
 
 <Layout
   title="Pricing - MyTinyCEO"
-  description="Simple, transparent pricing for MyTinyCEO. Free plan available. Pro plans start at $32/month."
+  description="Simple, transparent pricing for MyTinyCEO. Free plan available. Paid plans start at $32/month."
 >
   <Header />
 
   <section class="py-20 bg-gradient-to-br from-[#1e3a5f] to-[#1B6B6B] text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div class="bg-tech-teal text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-6 shadow-lg">
-        Launching November 2025
+        Now Available
       </div>
       <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4 text-white">Simple, Transparent Pricing</h1>
       <p class="text-xl text-white opacity-95">Choose the plan that fits your needs</p>
@@ -23,7 +23,7 @@ import PricingCard from '../components/PricingCard.astro';
 
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
         <PricingCard
           tier="Free"
           price="$0"
@@ -31,12 +31,39 @@ import PricingCard from '../components/PricingCard.astro';
           features={[
             "1 project",
             "AI Mentor (Tiny)",
-            "All planning features"
+            "All planning features",
+            "Watermark on exports",
+            "No PDF export"
           ]}
         />
         <PricingCard
-          tier="Monthly Pro"
+          tier="Basic Monthly"
           price="$32"
+          period="month"
+          features={[
+            "1 project",
+            "AI Mentor (Tiny)",
+            "All planning features",
+            "Unlimited PDF exports",
+            "No watermarks"
+          ]}
+        />
+        <PricingCard
+          tier="Basic Yearly"
+          price="$339"
+          period="year"
+          features={[
+            "Save $45/year",
+            "1 project",
+            "AI Mentor (Tiny)",
+            "All planning features",
+            "Unlimited PDF exports",
+            "No watermarks"
+          ]}
+        />
+        <PricingCard
+          tier="Pro Monthly"
+          price="$99"
           period="month"
           recommended={true}
           features={[
@@ -50,13 +77,14 @@ import PricingCard from '../components/PricingCard.astro';
           ]}
         />
         <PricingCard
-          tier="Annual Pro"
-          price="$340"
+          tier="Pro Yearly"
+          price="$999"
           period="year"
           features={[
-            "Save $44/year",
+            "Save $189/year",
             "10 projects",
-            "All Pro features",
+            "AI Mentor (Tiny)",
+            "All planning features",
             "Unlimited PDF exports",
             "No watermarks",
             "Priority support",
@@ -77,7 +105,7 @@ import PricingCard from '../components/PricingCard.astro';
 
           <div class="bg-gray-50 rounded-lg p-6">
             <h3 class="font-heading font-semibold text-steel-blue mb-2">What happens to my projects if I downgrade?</h3>
-            <p class="text-charcoal text-sm">Your projects are safe. You'll just be limited to 1 active project on the free plan. Upgrade anytime to access all 10.</p>
+            <p class="text-charcoal text-sm">Your projects are safe. Free and Basic plans allow 1 active project. Pro plans allow up to 10 projects. Upgrade anytime to access more.</p>
           </div>
 
           <div class="bg-gray-50 rounded-lg p-6">
@@ -104,7 +132,7 @@ import PricingCard from '../components/PricingCard.astro';
               <p class="font-medium">✓ Admin dashboard</p>
               <p class="font-medium">✓ API access</p>
             </div>
-            <span class="bg-[#1B7B7B] text-white px-6 py-2 rounded-lg text-sm font-semibold cursor-not-allowed inline-block shadow-lg">Coming Soon</span>
+            <a href="https://www.mytinyceo.app" class="bg-[#1B7B7B] text-white px-6 py-2 rounded-lg text-sm font-semibold inline-block shadow-lg hover:bg-[#156565] transition-colors">Get MyTinyCEO</a>
           </div>
         </div>
       </div>

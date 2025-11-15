@@ -1,0 +1,293 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="I Built MyTinyCEO in One Month: Lessons from Launching an AI Business Planning App | MyTinyCEO"
+  description="The journey from idea to launch: building MyTinyCEO as a solo founder, tackling security, payments, and AI integration. Now live for public beta testing."
+  type="article"
+  publishedTime="2025-11-15T00:00:00Z"
+>
+  <Header />
+
+  <!-- Blog Post Header -->
+  <article class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Meta Info -->
+      <div class="mb-6">
+        <a href="/resources" class="text-tech-teal hover:underline text-sm">← Back to Resources</a>
+        <div class="flex items-center gap-4 mt-4 text-sm text-gray-600">
+          <span>By Steve Dickens</span>
+          <span>•</span>
+          <span>8 min read</span>
+          <span>•</span>
+          <span>November 2025</span>
+        </div>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-steel-blue mb-6">
+        I Built MyTinyCEO in One Month—And It's Live
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-xl text-charcoal mb-8 leading-relaxed">
+        What I learned launching an AI business planning app as a solo founder—from code to security to payments.
+      </p>
+
+      <!-- Featured Quote -->
+      <div class="bg-gray-100 rounded-lg p-8 mb-12 border-l-4 border-tech-teal">
+        <p class="text-lg italic text-charcoal">
+          "I thought building the app would be the hard part. Turns out, authentication, security, payment processing, and AI integration taught me more than years of regular development."
+        </p>
+      </div>
+
+      <!-- Introduction -->
+      <div class="prose max-w-none mb-12">
+        <h2 class="text-3xl font-heading font-bold text-steel-blue mb-4">The Solo Founder Reality</h2>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          One month ago, I started building MyTinyCEO. Today, it's live and accepting beta testers.
+        </p>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          If you've ever been a solo founder, you know the feeling: you're the designer, the developer, the marketer, the support team, and somehow also the person trying to figure out OAuth flows at 2 AM. You're doing everything yourself because you have to.
+        </p>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          That's exactly why I built MyTinyCEO—an AI-powered business planning toolkit for founders who are handling it all. But before I tell you about the app, let me tell you what I learned building it.
+        </p>
+      </div>
+
+      <!-- The Build -->
+      <div class="prose max-w-none mb-12">
+        <h2 class="text-3xl font-heading font-bold text-steel-blue mb-4">Building in Public (Sort Of)</h2>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          I've been designing and coding for years. I can ship features, build interfaces, and architect systems. I thought launching an app would be straightforward: design it, code it, deploy it. Done.
+        </p>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          I was so wrong.
+        </p>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          Don't get me wrong—the design and development went smoothly. But everything <em>around</em> the app? That's where the real learning happened.
+        </p>
+
+        <!-- What I Learned Section -->
+        <div class="bg-blue-50 border-l-4 border-steel-blue p-6 rounded-lg my-6">
+          <h3 class="font-heading font-semibold text-steel-blue mb-4">What Building MyTinyCEO Actually Taught Me</h3>
+
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-semibold text-charcoal mb-2">1. Security Is No Joke</h4>
+              <p class="text-charcoal mb-0">
+                Authentication, encryption, secure data storage—this stuff matters. You're not just protecting your code; you're protecting your users' sensitive business information. I learned about OAuth, JWT tokens, password hashing, and why you should never, ever roll your own auth.
+              </p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-charcoal mb-2">2. Payment Processing Is Complex</h4>
+              <p class="text-charcoal mb-0">
+                Integrating Stripe wasn't just "drop in an API key." I had to learn about webhooks, subscription lifecycle management, handling failed payments, pro-rating upgrades, and about a dozen edge cases I never anticipated. Shoutout to Stripe's documentation—it's fantastic.
+              </p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-charcoal mb-2">3. AI Integration ≠ Just Calling an API</h4>
+              <p class="text-charcoal mb-0">
+                Building Tiny (MyTinyCEO's AI mentor) with Claude from Anthropic taught me the difference between a chatbot and a truly helpful assistant. It's about context, prompting, structured outputs, and creating an experience that feels like working with a smart colleague—not just getting generic answers.
+              </p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-charcoal mb-2">4. Launch Is Just the Beginning</h4>
+              <p class="text-charcoal mb-0">
+                Getting to "it works" is one thing. Getting to "it's ready for real users with real problems and real money" is entirely different. Beta testing, monitoring, error handling, user feedback loops—there's so much I'm still learning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Honest Truth -->
+      <div class="prose max-w-none mb-12">
+        <h2 class="text-3xl font-heading font-bold text-steel-blue mb-4">The Honest Truth About Solo Launching</h2>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          Here's what I wish someone had told me before I started:
+        </p>
+
+        <ul class="list-disc pl-8 space-y-3 text-lg text-charcoal mb-6">
+          <li><strong>You'll spend more time on things that aren't code than you expect.</strong> Documentation, testing, security reviews, compliance considerations—it adds up.</li>
+          <li><strong>Every integration has hidden complexity.</strong> What looks like a 2-hour task on the surface might be a 2-day rabbit hole once you account for edge cases and production-readiness.</li>
+          <li><strong>Launching feels both exciting and terrifying.</strong> You're proud of what you built, but also acutely aware of everything that could go wrong.</li>
+          <li><strong>The technical challenges are solvable.</strong> Security, payments, AI—it's all learnable. The harder part is shipping before you feel "ready."</li>
+        </ul>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          But you know what? I'm glad I did it. Because now MyTinyCEO exists, and it's helping founders who are exactly where I was a month ago.
+        </p>
+      </div>
+
+      <!-- What MyTinyCEO Actually Does -->
+      <div class="prose max-w-none mb-12">
+        <h2 class="text-3xl font-heading font-bold text-steel-blue mb-4">So, What Is MyTinyCEO?</h2>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          MyTinyCEO is an AI-powered business planning toolkit built specifically for solo founders and small business owners who are doing everything themselves.
+        </p>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          It's what I needed when I was preparing business plans for my own ventures—applying for SBA loans, pitching investors, or just trying to make sense of financial projections without hiring a CFO.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div class="bg-white border-2 border-tech-teal rounded-lg p-6">
+            <h3 class="text-xl font-heading font-bold text-steel-blue mb-3">🤖 Tiny, Your AI Business Mentor</h3>
+            <p class="text-charcoal">
+              Not a generic chatbot. Tiny understands business models, helps with financial projections, and explains complex terms in plain English—based on YOUR actual business.
+            </p>
+          </div>
+
+          <div class="bg-white border-2 border-tech-teal rounded-lg p-6">
+            <h3 class="text-xl font-heading font-bold text-steel-blue mb-3">📊 Automated Financial Projections</h3>
+            <p class="text-charcoal">
+              Generate SBA-compliant financial statements (P&L, cash flow, balance sheets) automatically. No Excel nightmares, no formula errors.
+            </p>
+          </div>
+
+          <div class="bg-white border-2 border-tech-teal rounded-lg p-6">
+            <h3 class="text-xl font-heading font-bold text-steel-blue mb-3">📈 Market Research That Actually Helps</h3>
+            <p class="text-charcoal">
+              Tiny researches your TAM/SAM/SOM using real industry data. No more guessing at market size or Googling competitor info for hours.
+            </p>
+          </div>
+
+          <div class="bg-white border-2 border-tech-teal rounded-lg p-6">
+            <h3 class="text-xl font-heading font-bold text-steel-blue mb-3">📄 Export-Ready Business Plans</h3>
+            <p class="text-charcoal">
+              One-click PDF export with professional formatting. Perfect for loan applications, investor pitches, or internal planning.
+            </p>
+          </div>
+        </div>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          The goal isn't to replace your thinking—it's to handle the tedious, technical parts so you can focus on building your business.
+        </p>
+      </div>
+
+      <!-- The Launch Announcement -->
+      <div class="prose max-w-none mb-12">
+        <h2 class="text-3xl font-heading font-bold text-steel-blue mb-4">We're Live (And We Need You)</h2>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          As of today, MyTinyCEO is live and open for public beta testing.
+        </p>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          That means it works, it's secure, it's processing payments, and real founders are using it to plan real businesses. But it also means I'm still learning, iterating, and improving based on feedback.
+        </p>
+
+        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg my-6">
+          <h3 class="font-heading font-semibold text-steel-blue mb-2">I Need Your Help</h3>
+          <p class="text-charcoal mb-3">
+            If you're a founder, entrepreneur, or small business owner who's:
+          </p>
+          <ul class="list-disc pl-6 text-charcoal space-y-2 mb-3">
+            <li>Preparing a business plan for funding</li>
+            <li>Trying to make sense of financial projections</li>
+            <li>Doing everything solo and could use an AI co-pilot</li>
+            <li>Just curious about what I built</li>
+          </ul>
+          <p class="text-charcoal mb-0">
+            I'd love for you to try MyTinyCEO and share your honest feedback. The good, the bad, the "this feature doesn't make sense"—all of it helps make the product better.
+          </p>
+        </div>
+      </div>
+
+      <!-- Why I'm Sharing This -->
+      <div class="prose max-w-none mb-12">
+        <h2 class="text-3xl font-heading font-bold text-steel-blue mb-4">Why I'm Telling You This</h2>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          Because if you're a solo founder, you know how isolating it can be. You're figuring everything out on your own, Googling error messages at midnight, wondering if you're doing it right.
+        </p>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          I want you to know: you're not alone. Building something from scratch is hard. Launching it is harder. But it's also incredibly rewarding.
+        </p>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          Whether you use MyTinyCEO or not, I hope this post reminds you that:
+        </p>
+
+        <ul class="list-disc pl-8 space-y-3 text-lg text-charcoal mb-6">
+          <li>It's okay to learn as you go (we all do)</li>
+          <li>Launching imperfectly is better than never launching</li>
+          <li>The technical stuff is learnable—security, payments, AI, all of it</li>
+          <li>Your challenges are valid, and your journey matters</li>
+        </ul>
+
+        <div class="bg-gradient-to-br from-steel-blue to-tech-teal text-white rounded-lg p-8 my-8">
+          <h3 class="text-2xl font-heading font-bold mb-3">One Month Ago</h3>
+          <p class="text-lg mb-4">
+            I had an idea and a blank code editor.
+          </p>
+          <h3 class="text-2xl font-heading font-bold mb-3">Today</h3>
+          <p class="text-lg mb-0">
+            MyTinyCEO is live, helping real founders build real businesses. And I'm just getting started.
+          </p>
+        </div>
+      </div>
+
+      <!-- Join Me -->
+      <div class="prose max-w-none mb-12">
+        <h2 class="text-3xl font-heading font-bold text-steel-blue mb-4">Join Me on This Journey</h2>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          If any of this resonates with you, I'd love to connect. Whether you:
+        </p>
+
+        <ul class="list-disc pl-8 space-y-3 text-lg text-charcoal mb-6">
+          <li>Want to try MyTinyCEO and give me feedback</li>
+          <li>Have your own solo founder story to share</li>
+          <li>Just want to chat about building, launching, and learning</li>
+          <li>Know someone who could benefit from an AI business planning toolkit</li>
+        </ul>
+
+        <p class="text-lg text-charcoal leading-relaxed mb-4">
+          Reach out. Let's talk. Let's help each other build better businesses.
+        </p>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="bg-[#0a0f14] text-white rounded-lg p-8 text-center">
+        <h2 class="text-3xl font-heading font-bold mb-4 text-white">Try MyTinyCEO Today</h2>
+        <p class="text-lg mb-6 text-white">
+          Join founders who are using AI to build better business plans, faster.
+        </p>
+        <p class="text-lg mb-6 text-white">
+          Public beta is open now. I'd love your feedback as we continue improving the platform together.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://app.mytinyceo.com" class="bg-[#1B7B7B] text-white font-cta font-medium px-8 py-3 rounded-lg hover:bg-[#156565] transition-colors inline-block shadow-lg">
+            Start Building Your Plan
+          </a>
+          <a href="/contact" class="bg-white text-steel-blue font-cta font-medium px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors inline-block shadow-lg">
+            Share Your Story
+          </a>
+        </div>
+        <p class="text-sm mt-6 text-gray-300">
+          Built by a founder, for founders. Let's build something great together.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+  <Footer />
+</Layout>
