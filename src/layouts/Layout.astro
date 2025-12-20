@@ -53,15 +53,11 @@ const isArticle = type === 'article';
       "@type": "Organization",
       "name": "MyTinyCEO",
       "url": "https://mytinyceo.com",
-      "logo": "https://mytinyceo.com/screenshots/4CastLogo.png",
       "description": "AI-powered business planning tool for founders",
       "founder": {
         "@type": "Person",
         "name": "Steve Dickens"
-      },
-      "sameAs": [
-        "https://4castconcrete.com"
-      ]
+      }
     })} />
 
     {isArticle && (
@@ -76,11 +72,7 @@ const isArticle = type === 'article';
         },
         "publisher": {
           "@type": "Organization",
-          "name": "MyTinyCEO",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://mytinyceo.com/screenshots/4CastLogo.png"
-          }
+          "name": "MyTinyCEO"
         },
         "datePublished": publishedTime,
         "mainEntityOfPage": {

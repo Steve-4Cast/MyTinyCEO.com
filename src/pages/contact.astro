@@ -18,11 +18,10 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <section class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- Contact Form -->
-        <div>
-          <h2 class="text-2xl font-heading font-bold text-steel-blue mb-6">Send a Message</h2>
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Contact Form -->
+      <div>
+        <h2 class="text-2xl font-heading font-bold text-steel-blue mb-6 text-center">Send a Message</h2>
           <form id="contact-form" class="space-y-4">
             <div>
               <label for="name" class="block text-sm font-semibold text-charcoal mb-2">Name</label>
@@ -144,57 +143,29 @@ import Footer from '../components/Footer.astro';
               }
             });
           </script>
-        </div>
 
-        <!-- Direct Contact Info -->
-        <div>
-          <h2 class="text-2xl font-heading font-bold text-steel-blue mb-6">Direct Contact</h2>
-
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-lg p-6">
-              <div class="flex items-center mb-3">
-                <div class="text-3xl mr-4">📧</div>
-                <div>
-                  <h3 class="font-heading font-semibold text-steel-blue">Email</h3>
-                  <a href="mailto:steve@4castconcrete.com" class="text-tech-teal hover:underline">steve@4castconcrete.com</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-gray-50 rounded-lg p-6">
-              <div class="flex items-center mb-3">
-                <div class="text-3xl mr-4">💼</div>
-                <div>
-                  <h3 class="font-heading font-semibold text-steel-blue">Company Website</h3>
-                  <a href="https://4castconcrete.com" target="_blank" rel="noopener noreferrer" class="text-tech-teal hover:underline">4castconcrete.com</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Response Time Promise -->
-            <div class="bg-tech-teal bg-opacity-10 border-2 border-tech-teal rounded-lg p-6">
-              <div class="flex items-start">
-                <div class="text-2xl mr-3">⏱️</div>
-                <div>
-                  <h3 class="font-heading font-semibold text-steel-blue mb-2">Response Time</h3>
-                  <p class="text-sm text-charcoal">
-                    I personally read every message and respond within 24-48 hours.
-                    If you don't hear back, check your spam folder or email again!
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Support Section -->
-            <div class="bg-gray-50 rounded-lg p-6">
-              <h3 class="font-heading font-semibold text-steel-blue mb-3">Need help with the app?</h3>
-              <ul class="text-sm text-charcoal space-y-2">
-                <li>📚 Check the <a href="/faq" class="text-tech-teal hover:underline">FAQ</a> first</li>
-                <li>💬 Ask Tiny in the app (fastest!)</li>
-                <li>📧 Or email: support@mytinyceo.com</li>
-              </ul>
+        <!-- Response Time Promise -->
+        <div class="bg-tech-teal bg-opacity-10 border-2 border-tech-teal rounded-lg p-6 mt-8">
+          <div class="flex items-start">
+            <div class="text-2xl mr-3">⏱️</div>
+            <div>
+              <h3 class="font-heading font-semibold text-steel-blue mb-2">Response Time</h3>
+              <p class="text-sm text-charcoal">
+                I personally read every message and respond within 24-48 hours.
+                If you don't hear back, check your spam folder or send another message!
+              </p>
             </div>
           </div>
+        </div>
+
+        <!-- Support Section -->
+        <div class="bg-gray-50 rounded-lg p-6 mt-6">
+          <h3 class="font-heading font-semibold text-steel-blue mb-3">Need help with the app?</h3>
+          <ul class="text-sm text-charcoal space-y-2">
+            <li>📚 Check the <a href="/faq" class="text-tech-teal hover:underline">FAQ</a> first</li>
+            <li>💬 Ask Tiny in the app (fastest!)</li>
+            <li>📧 Or email: support@mytinyceo.com</li>
+          </ul>
         </div>
       </div>
     </div>

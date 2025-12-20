@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import fourCastLogo from '../../public/screenshots/4CastLogo.png';
 const currentYear = new Date().getFullYear();
 ---
 
@@ -14,8 +12,8 @@ const currentYear = new Date().getFullYear();
           The AI-powered business planning tool built for founders, by a founder.
           Transform your idea into an investor-ready plan in hours, not months.
         </p>
-        <p class="text-xs text-gray-400">
-          Launching November 2025
+        <p class="text-xs text-tech-teal font-semibold">
+          Now in Beta - Launched December 2025
         </p>
       </div>
 
@@ -50,37 +48,15 @@ const currentYear = new Date().getFullYear();
       </div>
     </div>
 
-    <!-- 4Cast Branding & Copyright -->
+    <!-- Copyright -->
     <div class="mt-8 pt-8 border-t border-gray-700">
-      <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        <!-- 4Cast Logo/Branding -->
-        <div class="flex items-center space-x-3">
-          <a
-            href="https://4castconcrete.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex items-center space-x-3 hover:opacity-80 transition-opacity"
-          >
-            <Image
-              src={fourCastLogo}
-              alt="4Cast Concrete Solutions LLC Logo"
-              class="h-12 w-auto"
-            />
-            <span class="text-xs text-gray-400">
-              A product of <span class="text-tech-teal font-semibold">4Cast Concrete Solutions LLC</span>
-            </span>
-          </a>
-        </div>
-
-        <!-- Copyright -->
+      <div class="flex flex-col items-center space-y-4">
         <div class="text-xs text-gray-400">
-          © {currentYear} 4Cast Concrete Solutions LLC. All rights reserved.
+          © {currentYear} MyTinyCEO. All rights reserved.
         </div>
-      </div>
 
-      <!-- Mission Statement -->
-      <div class="mt-6 text-center">
-        <p class="text-xs text-gray-500 italic">
+        <!-- Mission Statement -->
+        <p class="text-xs text-gray-500 italic text-center">
           Intelligence, Necessity, Structure, Perseverance, Innovation, Resilience, Empathy, and Design - We are INSPIRED!
         </p>
       </div>
